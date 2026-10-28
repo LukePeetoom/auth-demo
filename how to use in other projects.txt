@@ -1,6 +1,6 @@
 copy these files to new project:
 
-app/Http/Controllers/AuthController.php (+ DashboardController or skip if you skip change change all routs to dashboard related things to your main controller and/or model and/or views)
+app/Http/Controllers/AuthController.php (+ DashboardController or skip if you skip change change all routs to dashboard related things to your main controller and/or model and/or views use DashboardController if this is the first thing you do in your new project)
 resources/views/layouts/auth.blade.php
 resources/views/auth/login.blade.php
 resources/views/auth/register.blade.php
