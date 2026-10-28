@@ -7,20 +7,21 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    // Seed the application's database.
     public function run(): void
     {
-        // Makes it so it can only run seeders outside of production.
-        if (app()->environment('production')) {
-            return;
-        }
+        $this->call([
+            // add seeders here
+        ]);
 
-        User::updateOrCreate(
-            ['email' => 'test@test.com'],               // search key
-            [
-                'name' => 'Test',                       // values to set
-                'password' => 'TestTest123'             // hashed automatically
-            ]
-        );
+        // Only seed the test user outside of production.
+        if (!app()->environment('production')) {
+            User::updateOrCreate(
+                ['email' => 'test@test.com'],               // search key
+                [
+                    'name' => 'Test',
+                    'password' => 'TestTest123',            // hashed automatically in user model
+                ]
+            );
+        }
     }
 }
