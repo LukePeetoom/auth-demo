@@ -1,4 +1,4 @@
-copy this:
+copy these files to new project:
 
 app/Http/Controllers/AuthController.php        (+ DashboardController or skip)
 resources/views/layouts/auth.blade.php
