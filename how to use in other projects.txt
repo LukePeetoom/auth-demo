@@ -1,8 +1,11 @@
 copy these files to new project:
 
-app/Http/Controllers/AuthController.php (+ DashboardController or skip if you skip change change all routs to dashboard related things to your main controller and/or model and/or views use DashboardController if this is the first thing you do in your new project)
+app/Http/Controllers/AuthController.php (+ DashboardController or skip if you skip change your main controller and view to DashboardController and dashboard.blade.php use DashboardController if this is the first thing you do in your new project)
+resources/views/dashboard.blade.php (only if you copied DashboardController)
 resources/views/layouts/auth.blade.php
 resources/views/auth/login.blade.php
 resources/views/auth/register.blade.php
 public/css/auth.css
 database/seeders/DatabaseSeeder.php
+routes/web.php (if you add this to a existing project be careful to NOT replace your existing routes unless necessary)
+
