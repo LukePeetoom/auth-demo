@@ -1,0 +1,7 @@
+copy this:
+
+app/Http/Controllers/AuthController.php        (+ DashboardController or skip)
+resources/views/layouts/auth.blade.php
+resources/views/auth/login.blade.php
+resources/views/auth/register.blade.php
+public/css/auth.css
