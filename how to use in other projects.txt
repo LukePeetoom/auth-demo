@@ -1,3 +1,5 @@
+THIS IS FOR LARAVEL VERSION 12
+
 copy these files to new project:
 
 app/Http/Controllers/AuthController.php (+ DashboardController or skip if you skip change your main controller and view to DashboardController and dashboard.blade.php use DashboardController if this is the first thing you do in your new project)
